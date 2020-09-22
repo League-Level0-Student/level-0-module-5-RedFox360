@@ -10,6 +10,9 @@ public class For_loop_gauntlet {
 		sevens();
 		yearsalive();
 		nested1();
+		nested2();
+		nested3();
+		nested4();
 	}
 
 	public static void onetoonehundred() {
@@ -70,7 +73,34 @@ public class For_loop_gauntlet {
 	}
 
 	public static void nested2() {
-		
+		for (int i = 1; i <= 7; i += 3) {
+			for (int j = i; j <= i + 2; j++) {
+				System.out.print("" + j + " ");
+			}
+			System.out.println();
+		}
+
+		/*
+		 * 1 2 3 4 5 6 7 8 9
+		 */
+	}
+
+	public static void nested3() {
+		for (int i = 1; i <= 91; i += 10) {
+			for (int j = i; j <= i + 9; j++) {
+				System.out.print("" + j + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void nested4() {
+		for (int i = 1; i <= 6; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+}
 	}
 
 }
