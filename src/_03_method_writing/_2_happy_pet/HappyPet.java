@@ -10,7 +10,7 @@ public class HappyPet {
 	static int happinessLevel = 0;
 
 	public static void main(String[] args) {
-		String petu = null;
+		
 		String pet = null;
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in
 		// a variable
@@ -18,11 +18,11 @@ public class HappyPet {
 		int optiont = JOptionPane.showOptionDialog(null, "Choose a pet", "Choose a pet",
 				JOptionPane.INFORMATION_MESSAGE, JOptionPane.INFORMATION_MESSAGE, null, options, null);
 		if (optiont == 0) {
-			petu = "Cat";
+		
 			pet = "cat";
 		}
 		if (optiont == 1) {
-			petu = "Dog";
+			
 			pet = "Dog";
 		}
 
@@ -70,7 +70,7 @@ public class HappyPet {
 			if (optiont1 == 4) {
 				JOptionPane.showMessageDialog(null, "Your pet is neither happy nor sad");
 			}
-			if (happinessLevel >= 100) {
+			if (happinessLevel >= 70) {
 				JOptionPane.showMessageDialog(null, "Congratulations! You won! You take good care of your pet.");
 				System.exit(0);
 			}
